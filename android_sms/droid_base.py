@@ -8,6 +8,7 @@ from openerp.tools.translate import _
 from openerp.addons.android_sms.sl4a import android
 
 socket_trytimes = [0.1, 2]
+ROOT_UID = 1
 
 class droid_devices(osv.osv):
     _name = "droid.device"
@@ -131,6 +132,27 @@ class sim_card(osv.osv):
     _sql_constraints = [
         ('code', 'unique (code)', 'The code of the sim card must be unique !')
     ]
+
+    def send_sms(self, cr, uid, ids, context=None):
+        device_obj = self.pool.get('droid.device')
+        sms_msg_obj = self.pool.get('res.sms.message')
+        if not ids:
+            cr.execute("select id from sim_card;")
+            res = cr.fetchall()
+            ids = [i[0] for i in res]
+        objs = self.browse(cr, uid, ids, context)
+        for act in ['send', 'connect_and_send']:
+            for obj in objs:
+                if act == 'connect_and_send':
+                    device_obj.test_connect(cr, ROOT_UID, [obj.device_id.id for obj in objs], context)
+                if not obj.active or not obj.state == 'online': continue
+                if device_obj._droid.has_key(str(obj.device_id.id)):
+                    try:
+                        res = device_obj._droid[str(obj.device_id.id)].smsSend(context['sms_no'], context['sms_msg'])
+                        if res: return True
+                    except Exception, e:
+                        raise osv.except_osv('Send Error:', e.message)
+        return False
 
     def get_allsms(self, cr, uid, ids, context=None):
         '''

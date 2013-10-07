@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <!-- Send Sms -->
+        <record id="android_sms_send_sms_view" model="ir.ui.view">
+            <field name="name">android.send_sms.form</field>
+            <field name="model">android.send_sms</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Send Sms">
+                    <group colspan="6" col="6" >
+                        <field name="target_no"/>
+                        <field name="sms_simcard_id"/>
+                        <field name="msg_body" colspan='6' nolabel="1"/>
+                    </group>
+                    <group colspan="4" col="4">
+                        <button icon="gtk-cancel" special="cancel" string="Cancel"/>
+                        <button icon="gtk-ok" name="send_sms" string="Send" type="object"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+        <act_window name="Send Sms" res_model="android.send_sms" view_mode="form" target="new" id="action_send_sms"/>
+        <menuitem name="Send Sms" action="action_send_sms" id="menu_send_sms" parent="menu_res_sms_messages"  sequence="30"/>
+    </data>
+</openerp>
+

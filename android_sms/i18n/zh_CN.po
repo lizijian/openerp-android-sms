@@ -1,0 +1,384 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* android_sms
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0-20130813-231104\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-07 06:45+0000\n"
+"PO-Revision-Date: 2013-10-07 06:45+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: android_sms
+#: field:res.sms.message,read:0
+msgid "Readed"
+msgstr "已读"
+
+#. module: android_sms
+#: field:android.send_sms,msg_body:0
+msgid "Message Body"
+msgstr "短信内容"
+
+#. module: android_sms
+#: help:res.sms.message,sim_id:0
+msgid "The SIM Card sequence."
+msgstr "SIM卡编号."
+
+#. module: android_sms
+#: field:res.sms.message,service_center:0
+msgid "Service Center"
+msgstr "服务中心"
+
+#. module: android_sms
+#: field:sim.card,isp:0
+msgid "ISP"
+msgstr "ISP"
+
+#. module: android_sms
+#: model:ir.actions.act_window,name:android_sms.action_sim_card
+#: model:ir.model,name:android_sms.model_sim_card
+#: view:sim.card:0
+msgid "SIM Card"
+msgstr "SIM卡"
+
+#. module: android_sms
+#: selection:droid.device,state:0
+#: selection:sim.card,state:0
+msgid "Off-Line"
+msgstr "离线"
+
+#. module: android_sms
+#: field:res.sms.message,error_code:0
+msgid "Error Code"
+msgstr "错误代码"
+
+#. module: android_sms
+#: help:sim.card,code:0
+msgid "SIM Card No."
+msgstr "SIM卡号."
+
+#. module: android_sms
+#: field:droid.device,state:0
+#: field:sim.card,state:0
+msgid "State"
+msgstr "状态"
+
+#. module: android_sms
+#: field:res.sms.message,sim_id:0
+msgid "Sim Card ID"
+msgstr "SIM卡ID"
+
+#. module: android_sms
+#: selection:sim.card,isp:0
+msgid "China Unicom"
+msgstr "中国联通"
+
+#. module: android_sms
+#: help:droid.device,code:0
+msgid "The device's rule code."
+msgstr "设备规则代码."
+
+#. module: android_sms
+#: field:droid.device,last_connect_ts:0
+msgid "Last Connect Timestamp"
+msgstr "最后连接时间"
+
+#. module: android_sms
+#: model:ir.model,name:android_sms.model_res_sms_message
+#: model:ir.ui.menu,name:android_sms.menu_res_sms_message
+msgid "SMS Message"
+msgstr "短信"
+
+#. module: android_sms
+#: field:res.sms.message,folder:0
+msgid "Folder"
+msgstr "目录"
+
+#. module: android_sms
+#: field:droid.device,port:0
+msgid "Port"
+msgstr "端口"
+
+#. module: android_sms
+#: field:res.sms.message,type:0
+msgid "Type"
+msgstr "类型"
+
+#. module: android_sms
+#: field:res.sms.message,protocol:0
+msgid "SMS Protocol"
+msgstr "SMS协议"
+
+#. module: android_sms
+#: view:droid.device:0
+#: model:ir.actions.act_window,name:android_sms.action_android_device
+#: model:ir.model,name:android_sms.model_droid_device
+#: model:ir.ui.menu,name:android_sms.menu_android_devices
+msgid "Android Devices"
+msgstr "手机设备"
+
+#. module: android_sms
+#: field:res.sms.message,body:0
+msgid "Body"
+msgstr "正文"
+
+#. module: android_sms
+#: field:sim.card,device_id:0
+msgid "On Device"
+msgstr "设备"
+
+#. module: android_sms
+#: help:droid.device,name:0
+msgid "The device's name."
+msgstr "设备名称."
+
+#. module: android_sms
+#: help:droid.device,host:0
+msgid "The sl4a's listen interface."
+msgstr "设备地址."
+
+#. module: android_sms
+#: help:sim.card,name:0
+msgid "SIM Card Name."
+msgstr "SIM卡名称."
+
+#. module: android_sms
+#: field:droid.device,host:0
+msgid "Host"
+msgstr "地址"
+
+#. module: android_sms
+#: help:droid.device,port:0
+msgid "The sl4a's listen port."
+msgstr "端口."
+
+#. module: android_sms
+#: field:droid.device,simcard_ids:0
+msgid "Sim Cards"
+msgstr "SIM卡"
+
+#. module: android_sms
+#: field:res.sms.message,thread_id:0
+msgid "Thread ID"
+msgstr "线程ID"
+
+#. module: android_sms
+#: field:res.sms.message,date:0
+msgid "Date"
+msgstr "日期"
+
+#. module: android_sms
+#: view:android.send_sms:0
+#: model:ir.actions.act_window,name:android_sms.action_send_sms
+#: model:ir.model,name:android_sms.model_android_send_sms
+#: model:ir.ui.menu,name:android_sms.menu_send_sms
+#: view:sim.card:0
+msgid "Send Sms"
+msgstr "发送短信"
+
+#. module: android_sms
+#: sql_constraint:sim.card:0
+msgid "The code of the sim card must be unique !"
+msgstr "SIM卡代码必须唯一!"
+
+#. module: android_sms
+#: model:ir.ui.menu,name:android_sms.menu_configuration
+msgid "Configuration"
+msgstr "设置"
+
+#. module: android_sms
+#: selection:droid.device,state:0
+#: selection:sim.card,state:0
+msgid "On-Line"
+msgstr "在线"
+
+#. module: android_sms
+#: selection:res.sms.message,folder:0
+msgid "Out Box"
+msgstr "发件箱"
+
+#. module: android_sms
+#: field:res.sms.message,status:0
+msgid "Status"
+msgstr "状态"
+
+#. module: android_sms
+#: selection:droid.device,state:0
+#: selection:sim.card,state:0
+msgid "Exception"
+msgstr "异常"
+
+#. module: android_sms
+#: selection:sim.card,isp:0
+msgid "China Telecom"
+msgstr "中国电信"
+
+#. module: android_sms
+#: field:res.sms.message,locked:0
+msgid "Locked"
+msgstr "已锁定"
+
+#. module: android_sms
+#: field:droid.device,name:0
+#: field:sim.card,name:0
+msgid "Name"
+msgstr "名称"
+
+#. module: android_sms
+#: selection:res.sms.message,folder:0
+msgid "In Box"
+msgstr "收件箱"
+
+#. module: android_sms
+#: code:addons\android_sms\droid_base.py:221
+#: model:ir.actions.act_window,name:android_sms.action_res_sms_message
+#: model:ir.ui.menu,name:android_sms.menu_res_sms_messages
+#: view:res.sms.message:0
+#: field:sim.card,sms_message_ids:0
+#, python-format
+msgid "SMS Messages"
+msgstr "短信"
+
+#. module: android_sms
+#: model:res.groups,name:android_sms.group_android_manage
+msgid "Android Manage"
+msgstr "手机管理"
+
+#. module: android_sms
+#: view:droid.device:0
+msgid "Refresh"
+msgstr "刷新"
+
+#. module: android_sms
+#: view:droid.device:0
+#: model:ir.ui.menu,name:android_sms.menu_sim_card
+#: field:res.sms.message,simcard_id:0
+msgid "Sim Card"
+msgstr "SIM卡"
+
+#. module: android_sms
+#: code:addons\android_sms\droid_base.py:174
+#, python-format
+msgid "Error!"
+msgstr "错误!"
+
+#. module: android_sms
+#: help:res.sms.message,folder:0
+msgid "SMS Message Folder."
+msgstr "短信目录"
+
+#. module: android_sms
+#: field:res.sms.message,address:0
+msgid "Sender Number"
+msgstr "发送人号码"
+
+#. module: android_sms
+#: view:android.send_sms:0
+msgid "Send"
+msgstr "发送"
+
+#. module: android_sms
+#: field:android.send_sms,sms_simcard_id:0
+#: field:droid.device,sms_simcard_id:0
+msgid "SMS SimCard"
+msgstr "短信SIM卡"
+
+#. module: android_sms
+#: model:res.groups,name:android_sms.group_android_base
+msgid "Android Base User"
+msgstr "手机用户"
+
+#. module: android_sms
+#: field:droid.device,active:0
+#: field:sim.card,active:0
+msgid "Active"
+msgstr "活动的"
+
+#. module: android_sms
+#: help:droid.device,state:0
+msgid "The device's current state."
+msgstr "设备当前状态."
+
+#. module: android_sms
+#: view:sim.card:0
+msgid "SMS Receive"
+msgstr "收取短信"
+
+#. module: android_sms
+#: field:droid.device,code:0
+#: field:sim.card,code:0
+msgid "Code"
+msgstr "代码"
+
+#. module: android_sms
+#: selection:sim.card,isp:0
+msgid "China Mobile"
+msgstr "中国移动"
+
+#. module: android_sms
+#: field:res.sms.message,person:0
+msgid "Person"
+msgstr "发送人"
+
+#. module: android_sms
+#: field:res.sms.message,m_size:0
+msgid "Max Size"
+msgstr "最大容量"
+
+#. module: android_sms
+#: selection:res.sms.message,folder:0
+msgid "Draft Box"
+msgstr "草稿箱"
+
+#. module: android_sms
+#: model:ir.ui.menu,name:android_sms.menu_android_device
+msgid "Android Device"
+msgstr "手机设备"
+
+#. module: android_sms
+#: field:res.sms.message,reply_path_present:0
+msgid "Reply Path Present"
+msgstr "回复路径"
+
+#. module: android_sms
+#: field:android.send_sms,target_no:0
+msgid "Target No"
+msgstr "目标手机号"
+
+#. module: android_sms
+#: field:droid.device,last_offline_ts:0
+msgid "Last OffLine Timestamp"
+msgstr "最后离线时间"
+
+#. module: android_sms
+#: view:android.send_sms:0
+msgid "Cancel"
+msgstr "取消"
+
+#. module: android_sms
+#: field:res.sms.message,seen:0
+msgid "Seen"
+msgstr "已查看"
+
+#. module: android_sms
+#: field:res.sms.message,o_id:0
+msgid "Source ID"
+msgstr "源ID"
+
+#. module: android_sms
+#: code:addons\android_sms\droid_base.py:174
+#, python-format
+msgid "Can't connect the android device"
+msgstr "不能连接手机设备"
+
+#. module: android_sms
+#: field:res.sms.message,date_sent:0
+msgid "Date Sent"
+msgstr "发送日期"
+

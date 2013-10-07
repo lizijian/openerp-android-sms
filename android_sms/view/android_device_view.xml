@@ -105,7 +105,10 @@
                 <field name="arch" type="xml">
                     <form string="SIM Card" version="7.0">
                         <header>
-                                <button name="act_get_allsms" type="object" string="SMS Receive" class="oe_highlight" />
+                            <button name="act_get_allsms" type="object" string="SMS Receive" class="oe_highlight" />
+                            <button type="action" string="Send Sms"
+                                    name="%(action_send_sms)d"
+                                    context="{'default_sms_simcard_id': id}"/>
                             <field name="state" widget="statusbar" statusbar_colors='{"online":"green","offline":"red","except":"yellow"}'/>
                         </header>
                         <sheet string="SIM Card">

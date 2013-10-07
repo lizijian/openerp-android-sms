@@ -17,6 +17,7 @@
         'security/ir.model.access.csv',
         'view/android_device_view.xml',
         'view/message_view.xml',
+        'wizard/send_sms.xml',
     ],
     'demo_xml': [],
     'installable': True,
