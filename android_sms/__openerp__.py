@@ -12,12 +12,12 @@
     'depends': ['base'],
     'init_xml': [
     ],
-    'update_xml': [
+    'data': [
         'security/android_security.xml',
         'security/ir.model.access.csv',
+        'wizard/send_sms.xml',
         'view/android_device_view.xml',
         'view/message_view.xml',
-        'wizard/send_sms.xml',
     ],
     'demo_xml': [],
     'installable': True,

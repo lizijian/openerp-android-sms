@@ -21,7 +21,6 @@
             </field>
         </record>
         <act_window name="Send Sms" res_model="android.send_sms" view_mode="form" target="new" id="action_send_sms"/>
-        <menuitem name="Send Sms" action="action_send_sms" id="menu_send_sms" parent="menu_res_sms_messages"  sequence="30"/>
     </data>
 </openerp>
 

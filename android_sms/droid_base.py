@@ -140,6 +140,8 @@ class sim_card(osv.osv):
             cr.execute("select id from sim_card;")
             res = cr.fetchall()
             ids = [i[0] for i in res]
+        if not ids:
+            raise osv.except_osv('Send Error:', 'No valid sim card.')
         objs = self.browse(cr, uid, ids, context)
         for act in ['send', 'connect_and_send']:
             for obj in objs:

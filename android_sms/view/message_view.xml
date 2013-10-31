@@ -48,6 +48,7 @@
             </record>
 
             <menuitem name="SMS Message" parent="menu_res_sms_messages" id="menu_res_sms_message" action="action_res_sms_message" sequence="20"/>
+            <menuitem name="Send Sms" action="action_send_sms" id="menu_send_sms" parent="menu_res_sms_messages"  sequence="30"/>
 
     </data>
 </openerp>
